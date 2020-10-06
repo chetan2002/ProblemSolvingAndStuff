@@ -1,3 +1,4 @@
+/*Egyptian Fraction Problem*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -26,7 +27,7 @@ void egyptianFraction(int nr , int dr){
     }
 
     int n=dr/nr + 1;
-    cout<<"1/"<<n<<" + ";
+    cout<<"1/"<<n<<" + "<<endl;
 
     egyptianFraction(nr*n - dr , n*dr);
 
@@ -35,7 +36,7 @@ void egyptianFraction(int nr , int dr){
 
 
 int main(){
-    //Enter nr and dr
+    //Enter the value of numrator and denominator
     int nr,dr;
     cin>>nr>>dr;
 
