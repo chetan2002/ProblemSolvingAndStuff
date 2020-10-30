@@ -47,6 +47,27 @@ void LCS(string s1,string s2){
     c[m]='\0';
     cout<<"String is:"<<c<<endl;
 
+    cout<<endl<<endl;
+    cout<<"MATRIX IS:"<<endl;
+    cout<<" "<<" "<<" "<<" ";
+    for(auto c: s2){
+        cout<<c<<" ";
+    }
+    cout<<endl;
+    int r=0;
+    for(auto c: v){
+        if(r==0){
+            cout<<" "<<" ";
+        }else{
+            cout<<s1.at(r-1)<<" ";
+        }
+        for(auto a: c){
+            cout<<a<<" ";
+        }
+        cout<<endl;
+        r++;
+    }
+
 }
 
 int main(){
